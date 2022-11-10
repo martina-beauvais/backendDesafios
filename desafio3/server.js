@@ -1,5 +1,5 @@
-const Container = require('./index') // Importing Container class
-const archivoProductos = new Container('./desafio2/productos.json');
+const Container = require('./index') // IMPORTO EL CLASS CONTAINER DEL INDEX
+const archivoProductos = new Container('./desafio2/productos.json'); 
 
 let express = require("express");
 
@@ -20,7 +20,7 @@ app.get("/productRandom", async (req, res) => {
     res.send(product)
 })
 app.get("/", (req, res) => {
-    res.send('<h1 style="display:flex;justify-content:center;color:green;text-align:center">this is the main page</h1>')
+    res.send('<h1 style="display:flex;justify-content:center;color:#B1B2FF;text-align:center">página principal</h1>')
 })
 
 server.on('error', error => {
