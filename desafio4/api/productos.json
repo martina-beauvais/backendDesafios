@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Macchiato",
+    "price": 250,
+    "thumbnail": "./img/vicious takeaway cup v1.png",
+    "id": 2
+  },
+  {
+    "id": 3,
+    "title": "Iced Latte",
+    "price": 350,
+    "thumbnail": "https://www.starbucksathome.com/ar/sites/default/files/2021-03/2-IcedLatte_LongShadow_Cream_1.png"
+  },
+  {
+    "title": "Espresso",
+    "price": "170",
+    "thumbnail": "https://www.illy.com/content/dam/channels/website/consumer/global/recipies/Doppio-tazza-media_mobile.jpg",
+    "id": 4
+  },
+  {
+    "title": "Latte",
+    "price": "350",
+    "thumbnail": "https://www.allrecipes.com/thmb/Wh0Qnynwdxok4oN0NZ1Lz-wl0A8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/9428203-9d140a4ed1424824a7ddd358e6161473.jpg",
+    "id": 5
+  },
+  {
+    "title": "Latte macchiato",
+    "price": 350,
+    "thumbnail": "https://www.nespresso.com/ncp/res/uploads/recipes/nespresso-recipes-Latte-Macchiato.jpg",
+    "id": 6
+  }
+]
