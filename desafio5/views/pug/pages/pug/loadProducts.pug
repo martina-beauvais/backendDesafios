@@ -1,0 +1,34 @@
+html(lang="en")
+    head 
+        meta(charset='utf-8')
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous")
+        link(rel="stylesheet", href="./css/loadProduct.css")
+        title='Añadir Productos - Vicious'
+
+        link(rel="shortcut icon", href="icon/icon.png", type="image/x-icon")
+    body
+        div 
+            img(src="addProduct-banner.png", class="addProBanner", alt="", srcset="")
+        div(class='container')
+            form(action="products", method="POST")
+                div(class="input-group mb-3")
+                    strong ID  
+                        input(type="number", name="id",placeholder="Product ID",class="input")
+                    strong NAME 
+                        input(type="text", name="title",placeholder="Product name",class="input")
+                    strong PRICE 
+                        input(type="number", name="price",class="input" placeholder="Product price")
+                    strong PHOTO 
+                        input(type="text", name="thumbnail", class="input", placeholder="Product photo")
+                a(href="http://localhost:3001/products") 
+                    button(type="submit", class="cssbuttons-io-button") Submit
+                        div(class='icon')
+                            svg(height="24",width="24", viewBox="0 0 24 24", xmlns="http://www.w3.org/2000/svg")
+                                path(d="M0 0h24v24H0z", fill="none")
+                                path(d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z", fill="currentColor")
+        div(class='buttons')
+            button
+                a(href="http://localhost:3001/") INICIO
+            button 
+                a(href="http://localhost:3001/products") PRODUCTOS
