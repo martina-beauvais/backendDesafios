@@ -1,0 +1,127 @@
+.proBanner{
+    width:50%;
+    height:25%;
+    margin-left: 25%;
+    margin-bottom:5%;
+}
+.card {
+    width: 220px;
+    height: 380px;
+    padding: .8em;
+    background: #B1B2FF;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: inline-block;
+    margin-left:12%;
+    margin-bottom:5%;
+
+}
+
+.card-img {
+    background-color: #F3F5F6;
+    height: 50%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+
+.imagen{
+    width:100%;
+    height:100%;
+    border-radius: .5rem;
+}
+
+.card-info {
+    padding-top: 10%;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:15%;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/*Text*/
+.text-title {
+    font-weight: 550;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+/*Button*/
+.card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+/*Hover*/
+.card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: #595CFF 0px 13px 47px -5px, #2A2DFF 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+    border: 1px solid #2A2DFF;
+    background-color: #2A2DFF;
+}
+
+.buttons{
+    margin-left: 30%;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+h2{
+    text-align: center;
+    padding-top:3%;
+    padding-bottom: 5%;
+}
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #2A2DFF;
+    box-shadow: 0px 15px 20px #595CFF;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+a{
+    color:black;
+    text-decoration: none;
+}

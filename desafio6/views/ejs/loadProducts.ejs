@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Vicious</title>
+
+    <!-- LINK DE BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/loadProducts.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <script src="./socket.io/socket.io.js"></script>
+
+</head>
+<body>
+    <div>
+        <div>
+            <img src="addProduct-banner.png" class="addProBanner" alt="" srcset=""/> 
+        </div>
+        <div class="container">
+            <form action="/products" method="POST" id="newProduct">
+                <div class="input-group mb-3">
+                    <strong>
+                        NAME <input type="text" id="NAME" name="title"  class="input" placeholder="Product name" aria-label="Username" aria-describedby="basic-addon2">
+                    </strong>
+                </div>
+                <div class="input-group mb-3">
+                    <strong>
+                        PRICE <input type="text" id="PRICE" name="price" class="input" placeholder="Product price" aria-label="Username" aria-describedby="basic-addon3">
+                    </strong>
+                </div>
+                <div class="input-group mb-3">
+                    <strong>
+                        PHOTO <input type="text" id="PHOTO" name="thumbnail"  class="input" placeholder="Product photo" aria-label="Username" aria-describedby="basic-addon4">
+                    </strong>        
+                </div>
+                <button type="submit" class="cssbuttons-io-button" value='Guardar producto' id="send_product"> Submit
+                    <a href="http://localhost:8080/products"></a>
+                    <div class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+                    </div>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button>
+            <a href="http://localhost:8080/"> INICIO </a>
+        </button>
+        <button>
+            <a href="http://localhost:8080/products"> PRODUCTOS </a>
+        </button>
+        <button>
+            <a href="http://localhost:8080/chat"> CHAT </a>
+        </button>
+    </div>
+</body>
+</html>
