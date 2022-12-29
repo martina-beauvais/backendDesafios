@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "name": "desafio7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^2.3.0",
+    "mysql": "^2.18.1",
+    "sqlite3": "^5.1.4"
+  }
+}
