@@ -1,0 +1,168 @@
+.buttons{
+    margin-top:5%;
+    margin-left: 34%;
+}
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #2A2DFF;
+    box-shadow: 0px 15px 20px #595CFF;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+
+
+.addProBanner{
+    width:70%;
+    height:60%;
+    margin-left: 15%;
+    margin-bottom:5%;
+}
+
+.container {
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #F8E6A1;
+    box-shadow: 6px 6px 12px #ffffff,
+                -6px -6px 12px #F8DA68;
+    font-size: medium;
+    font-weight: bold;
+    max-width: 450px;
+}
+
+.container:focus {
+    outline-color: white;
+}
+.input {
+    background-color: transparent;
+    max-width: 190px;
+    height: 40px;
+    padding: 10px;
+    /* text-align: center; */
+    border: 2px solid white;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
+}
+
+.input:focus {
+    color: #2A2DFF;
+    background-color: transparent;
+    outline-color: #2A2DFF;
+    box-shadow: -3px -3px 15px #2A2DFF;
+    transition: .1s;
+    transition-property: box-shadow;
+}
+
+.cssbuttons-io-button {
+    background: #595CFF;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #B1B2FF;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    margin-left: 30%;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #B1B2FF;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #B1B2FF;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}   
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #2A2DFF;
+    box-shadow: 0px 15px 20px #595CFF;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+#container_products.active>div:last-of-type, #container_products>div:first-of-type{
+    display: block;
+}
+#container_products>div:last-of-type, #container_products.active>div:first-of-type{
+    display: none;
+}

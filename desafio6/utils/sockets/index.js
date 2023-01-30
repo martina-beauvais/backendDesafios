@@ -1,6 +1,6 @@
-let {Server : SocketIO} = require('socket.io');
-const Productos = require('../../api/classProducts');
-const products = new Productos('./resources/productos.json');
+import { Server } from 'socket.io';
+import Products from '../../dao/FileSystem/classProducts.js';
+const products = new Products('./resources/productos.json');
 
 class Socket {
     static instancia;
@@ -9,7 +9,7 @@ class Socket {
             return Socket.instancia
         }
         Socket.instancia = this;
-        this.io = new SocketIO(http);
+        this.io = new Server(http);
         this.mensajes = []; 
         this.usuarios = [];
         this.productos = [];
@@ -83,4 +83,4 @@ class Socket {
 
 
 
-module.exports = Socket;
+export default Socket; 

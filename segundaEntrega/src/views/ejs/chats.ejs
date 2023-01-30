@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chat - Vicious </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/chats.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <script src="./socket.io/socket.io.js"></script>
+    
+</head>
+<body>
+    <div>
+        <img src="chat-banner.png" class="chatBanner" alt="" srcset=""/>
+    </div>
+    <div id="container_chat">
+        <div>
+            <form id="data_user">
+                <input required type="text" class="input" name="name_user" placeholder="Ingrese su nombre.ᐟ">
+                <input required type="email" class="input" name="email_user" placeholder="Ingrese su email.ᐟ" >
+                <button type="submit" class="cssbuttons-io-button" valor="Ingresar al chat"> 
+                    Submit 
+                    <div class="icon">
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+                    </div>
+                </button>
+            </form>
+        </div>
+        <div class="card">
+            <div>
+                <div class="parrafo">
+                    <div id="textAndButton">
+                        <input type="text" class="input" name="inputText" id="inputText" placeholder="Ingresa tu mensaje">
+                        <button id="send_socket">Enviar</button>
+                    </div>
+                    <div>
+                        <p id='parrafo_chat'></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="buttons">
+        <button>
+            <a href="http://localhost:8080/"> INICIO </a>
+        </button>
+        <button>
+            <a href="http://localhost:8080/loadProducts"> AGREGAR PRODUCTOS </a>
+        </button>
+        <button>
+            <a href="http://localhost:8080/products"> PRODUCTOS </a>
+        </button>
+    </div>
+    <script>
+        let user = null;
+        let inputText = document.getElementById('inputText');
+        let send_socket = document.getElementById('send_socket');
+        let container_chat = document.getElementById('container_chat');
+        let parrafo_chat = document.getElementById('parrafo_chat');
+        let form_data_user = document.getElementById('data_user');
+
+        // FECHA 
+        const today = new Date()
+
+
+        data_user.addEventListener('submit', evt =>{
+            evt.preventDefault();
+            user = {
+                name: evt.target[0].value,
+                email: evt.target[1].value
+            }
+
+            if(user.name == '' || user.email == '') window.location.reload()
+            socket = io();
+            socket.emit('addUser', user);
+            container_chat.classList = 'active'
+            readSockets()
+        });
+
+        function readSockets(){
+            loadChat();
+            socket.on('listenserver', data => {
+                console.log('Recibiendo...', data);
+                loadData(data)
+            });
+        }
+
+        function loadChat(){
+            socket.on('init', data =>{ 
+                loadData(data);
+            })
+        
+            socket.on('loadUsers', data =>{
+                console.log('evento loadUsers --->',data)
+            })
+        }
+
+        function loadData(data){
+            let innerP = '';
+            data.forEach(element => {
+                innerP += `<p><b style='color:blue;'> 
+                    ${element.email}</b>
+                    <a style='color:#A52A2A	;'> [${today.getDate()
+                        + '/'+(today.getMonth()+1) + '/'
+                        +today.getFullYear()+ ' '
+                        +today.getHours() + ":"
+                        + today.getMinutes() + ":" 
+                        + today.getSeconds()}]</a> : 
+                    <i style='color:green;'> 
+                    ${element.sms}</i></p>`
+            })
+            parrafo_chat.innerHTML = innerP
+        }
+
+        send_socket.addEventListener('click', event => {
+            let sendMessage = {
+                ...user,
+                sms: inputText.value
+            }
+            socket.emit('mensaje', sendMessage)
+            inputText.value = '';
+        })
+    </script>
+
+</body>
+</html>

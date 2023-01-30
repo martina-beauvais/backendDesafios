@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito - Vicious</title>
+
+    <!-- LINK DE BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/products.css">
+    <!-- ICON -->
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <!-- SOCKET IO -->
+    <script src="./socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div> 
+        <img src="carrito-banner.png" class="proBanner" alt="" srcset=""/> 
+    </div>
+    <div class="contenedorListCarrito">
+        <% if( product) { %>
+        <div class="productInCart" id=<%=product.id %> >
+            <div>
+                <img class= src=<%=product.thumbnail%> />
+            </div>
+            <div class="detailsProductInCart">
+                <h4 class="titleProductInCart"><%=product.title%></h4>
+                <h5> Cantidad: <%=product.quantify%></h5>
+                <h5> Subtotal: $ <%=product.quantify * product.price%></h5>
+            </div>
+            <div>
+                <button class='btn btn-circle-CartItem'> Eliminar </button>
+            </div>
+        </div>
+        <% }; %>
+    </div>
+    <div class="buttons">
+        <button>
+            <a href="http://localhost:8080/"> INICIO </a>
+        </button>
+        <button>
+            <a href="http://localhost:8080/products"> PRODUCTOS </a>
+        </button>
+        <button>
+            <a href="http://localhost:8080/loadProducts"> AGREGAR PRODUCTOS </a>
+        </button>
+        <button>
+            <a href="http://localhost:8080/chat"> CHAT </a>
+        </button>
+    </div>
+</body>
+</html>
