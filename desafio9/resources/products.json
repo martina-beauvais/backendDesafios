@@ -1,0 +1,42 @@
+[
+    {
+        "id": "b7373af3d26f4a3db7de68a4",
+        "title": "Generic Steel Bike",
+        "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+        "price": "372.00",
+        "thumbnail": "https://loremflickr.com/640/480",
+        "stock": "97568"
+      },
+      {
+        "id": "ef4ee867dce65ebbec445ed9",
+        "title": "Fantastic Wooden Sausages",
+        "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "price": "885.00",
+        "thumbnail": "https://loremflickr.com/640/480",
+        "stock": "53818"
+      },
+      {
+        "id": "367ee1c96f9f93bbff48d49b",
+        "title": "Generic Fresh Fish",
+        "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+        "price": "937.00",
+        "thumbnail": "https://loremflickr.com/640/480",
+        "stock": "40620"
+      },
+      {
+        "id": "fae2f9ede1678a6ed1a3b9c2",
+        "title": "Refined Concrete Sausages",
+        "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "price": "692.00",
+        "thumbnail": "https://loremflickr.com/640/480",
+        "stock": "15847"
+      },
+      {
+        "id": "b6f7651df3efde18a3d47e6e",
+        "title": "Luxurious Soft Chips",
+        "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+        "price": "997.00",
+        "thumbnail": "https://loremflickr.com/640/480",
+        "stock": "99495"
+      }
+]

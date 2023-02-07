@@ -1,4 +1,4 @@
-const Products = require('../api/classProducts.js');
+const Products = require('../Container/Container.js');
 const Productos = new Products('./resources/productos.json');
 
 let {Router} = require('express');
