@@ -1,0 +1,125 @@
+Statistical profiling result from info.log, (135 ticks, 0 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    121   89.6%          C:\Program Files\nodejs\node.exe
+     13    9.6%          C:\WINDOWS\SYSTEM32\ntdll.dll
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      1    0.7%  100.0%  JS: ^Module._findPath node:internal/modules/cjs/loader:555:28
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+      1    0.7%  100.0%  JavaScript
+      0    0.0%    0.0%  C++
+      2    1.5%  200.0%  GC
+    134   99.3%          Shared libraries
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+    121   89.6%  C:\Program Files\nodejs\node.exe
+    110   90.9%    C:\Program Files\nodejs\node.exe
+     35   31.8%      JS: ~inspectorWaitForDebugger node:inspector:192:34
+     35  100.0%        JS: ~<anonymous> c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:91195
+     35  100.0%          JS: ~<anonymous> c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:90486
+     35  100.0%            JS: ~6679 c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:89427
+     16   14.5%      JS: ~spawnSync node:internal/child_process:1102:19
+     16  100.0%        JS: ~spawnSync node:child_process:827:19
+     16  100.0%          JS: ~<anonymous> c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:91195
+     16  100.0%            JS: ~<anonymous> c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:90486
+      9    8.2%      JS: ^compileForInternalLoader node:internal/bootstrap/loaders:319:27
+      6   66.7%        JS: ^nativeModuleRequire node:internal/bootstrap/loaders:356:29
+      1   16.7%          JS: ~setupWebCrypto node:internal/process/pre_execution:270:24
+      1  100.0%            JS: ~prepareExecution node:internal/process/pre_execution:52:26
+      1   16.7%          JS: ~lazyLoadStreams node:fs:2903:25
+      1  100.0%            JS: ~get ReadStream node:fs:3046:17
+      1   16.7%          JS: ~initializeCJSLoader node:internal/process/pre_execution:563:29
+      1  100.0%            JS: ~setupUserModules node:internal/process/pre_execution:121:26
+      1   16.7%          JS: ~<anonymous> node:internal/readline/interface:1:1
+      1  100.0%            JS: ^compileForInternalLoader node:internal/bootstrap/loaders:319:27
+      1   16.7%          JS: ~<anonymous> node:internal/modules/esm/loader:1:1
+      1  100.0%            JS: ^compileForInternalLoader node:internal/bootstrap/loaders:319:27
+      1   16.7%          JS: ~<anonymous> node:https:1:1
+      1  100.0%            JS: ^compileForInternalLoader node:internal/bootstrap/loaders:319:27
+      3   33.3%        JS: ~compileForPublicLoader node:internal/bootstrap/loaders:264:25
+      2   66.7%          JS: ^loadBuiltinModule node:internal/modules/cjs/helpers:45:27
+      2  100.0%            JS: ~Module._load node:internal/modules/cjs/loader:851:24
+      1   33.3%          JS: ~loadBuiltinModule node:internal/modules/cjs/helpers:45:27
+      1  100.0%            JS: ~Module._load node:internal/modules/cjs/loader:851:24
+      7    6.4%      JS: ^internalCompileFunction node:internal/vm:30:33
+      6   85.7%        JS: ^wrapSafe node:internal/modules/cjs/loader:1117:18
+      6  100.0%          JS: ^Module._compile node:internal/modules/cjs/loader:1173:37
+      3   50.0%            JS: ~Module._extensions..js node:internal/modules/cjs/loader:1227:37
+      3   50.0%            JS: ^Module._extensions..js node:internal/modules/cjs/loader:1227:37
+      1   14.3%        JS: ~wrapSafe node:internal/modules/cjs/loader:1117:18
+      1  100.0%          JS: ~Module._compile node:internal/modules/cjs/loader:1173:37
+      1  100.0%            JS: ~Module._extensions..js node:internal/modules/cjs/loader:1227:37
+      5    4.5%      JS: ~isatty node:tty:42:16
+      5  100.0%        JS: ~useColors C:\- Usuario\Escritorio\desafio14\node_modules\debug\src\node.js:75:19
+      5  100.0%          JS: ~createDebug C:\- Usuario\Escritorio\desafio14\node_modules\debug\src\debug.js:63:21
+      2   40.0%            JS: ~<anonymous> C:\- Usuario\Escritorio\desafio14\node_modules\express\lib\router\layer.js:1:1
+      1   20.0%            JS: ~<anonymous> C:\- Usuario\Escritorio\desafio14\node_modules\send\index.js:1:1
+      1   20.0%            JS: ~<anonymous> C:\- Usuario\Escritorio\desafio14\node_modules\express\lib\application.js:1:1
+      1   20.0%            JS: ~<anonymous> C:\- Usuario\Escritorio\desafio14\node_modules\body-parser\lib\types\json.js:1:1
+      4    3.6%      JS: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      4  100.0%        JS: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      4  100.0%          JS: ~<anonymous> C:\- Usuario\Escritorio\desafio14\node_modules\debug\src\node.js:1:1
+      4  100.0%            JS: ~Module._compile node:internal/modules/cjs/loader:1173:37
+      4    3.6%      JS: ^stat node:internal/modules/cjs/loader:161:14
+      4  100.0%        JS: ^Module._findPath node:internal/modules/cjs/loader:555:28
+      3   75.0%          JS: ^Module._resolveFilename node:internal/modules/cjs/loader:948:35
+      3  100.0%            JS: ^Module._load node:internal/modules/cjs/loader:851:24
+      1   25.0%          JS: ~Module._resolveFilename node:internal/modules/cjs/loader:948:35
+      1  100.0%            JS: ^Module._load node:internal/modules/cjs/loader:851:24
+      3    2.7%      JS: ^__webpack_require__ c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:99557
+      1   33.3%        JS: ~8777 c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:36597
+      1  100.0%          JS: ~__webpack_require__ c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:99557
+      1  100.0%            JS: ~7993 c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:81902
+      1   33.3%        JS: ~8762 c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:66621
+      1  100.0%          JS: ~__webpack_require__ c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:99557
+      1  100.0%            JS: ~8777 c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:36597
+      1   33.3%        JS: ~1322 c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:94213
+      1  100.0%          JS: ^__webpack_require__ c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:99557
+      1  100.0%            JS: ~6679 c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:89427
+      2    1.8%      JS: ~realpathSync node:fs:2470:22
+      2  100.0%        JS: ~toRealPath node:internal/modules/cjs/loader:449:20
+      2  100.0%          JS: ~Module._findPath node:internal/modules/cjs/loader:555:28
+      1   50.0%            JS: ~resolveMainPath node:internal/modules/run_main:15:25
+      1   50.0%            JS: ~Module._resolveFilename node:internal/modules/cjs/loader:948:35
+      2    1.8%      JS: ^read node:internal/modules/package_json_reader:16:14
+      2  100.0%        JS: ^readPackage node:internal/modules/cjs/loader:335:21
+      1   50.0%          JS: ~resolveExports node:internal/modules/cjs/loader:528:24
+      1  100.0%            JS: ^Module._findPath node:internal/modules/cjs/loader:555:28
+      1   50.0%          JS: ^resolveExports node:internal/modules/cjs/loader:528:24
+      1  100.0%            JS: ^Module._findPath node:internal/modules/cjs/loader:555:28
+
+     13    9.6%  C:\WINDOWS\SYSTEM32\ntdll.dll
+      4   30.8%    C:\Program Files\nodejs\node.exe
+      1   25.0%      JS: ~packageExportsResolve node:internal/modules/esm/resolve:559:31
+      1  100.0%        JS: ^resolveExports node:internal/modules/cjs/loader:528:24
+      1  100.0%          JS: ^Module._findPath node:internal/modules/cjs/loader:555:28
+      1  100.0%            JS: ~Module._resolveFilename node:internal/modules/cjs/loader:948:35
+      1   25.0%      JS: ~Module._load node:internal/modules/cjs/loader:851:24
+      1  100.0%        JS: ~Module.require node:internal/modules/cjs/loader:1097:36
+      1  100.0%          JS: ~Module._preloadModules node:internal/modules/cjs/loader:1376:34
+      1  100.0%            JS: ~loadPreloadModules node:internal/process/pre_execution:618:28
+      1   25.0%      JS: ^__webpack_require__ c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:99557
+      1  100.0%        JS: ~1322 c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:94213
+      1  100.0%          JS: ^__webpack_require__ c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:99557
+      1  100.0%            JS: ~6679 c:\Users\Usuario\AppData\Roaming\Code\User\workspaceStorage\7d83bc0410b64ec473ba538c48d9e1a4\ms-vscode.js-debug\bootloader.js:2:89427
+      1   25.0%      C:\Program Files\nodejs\node.exe
+      1  100.0%        JS: ~finalizeResolution node:internal/modules/esm/resolve:242:28
+      1  100.0%          JS: ~moduleResolve node:internal/modules/esm/resolve:857:23
+      1  100.0%            JS: ~defaultResolve node:internal/modules/esm/resolve:997:30
+
