@@ -1,0 +1,44 @@
+<div>
+    <img src="login.png" class="loginImage" alt="" srcset="">
+</div>
+<form id="LogIn">
+    <div class="inputbox">
+        <input required="required" type="text" name="username" >
+        <span>Username</span>
+        <i></i>
+    </div>
+    <div class="inputbox">
+        <input required="required" type="password" name="password">
+        <span>Password</span>
+        <i></i>
+    </div>
+    <div>
+        <button type="submit">
+            <a href="/home">
+                Log In
+            </a>
+        </button>
+    </div>
+</form>
+
+<div>
+    <p>
+        ¿Todavía no tienes una cuenta? 
+        <a href="/register">
+            Registrate
+        </a>
+    </p>
+    <p>
+        Iniciar Sesión con:
+        <a href="/api/sessions/github">
+            <button class='button'>
+                GITHUB
+            </button>
+        </a>
+    </p> 
+</div>
+
+
+
+<script type="text/javascript" src="./js/login.js"></script>
+<link type="text/css" rel="stylesheet" href="./css/login.css">

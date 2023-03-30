@@ -1,0 +1,10 @@
+{{#each user}}
+    <div>
+        <h1>¡Adiós, {{firstName}}!</h1>
+    </div>
+{{/each}}
+<script>
+    setTimeout(() => {
+        location.href = "/";
+    }, 2000);
+</script>
