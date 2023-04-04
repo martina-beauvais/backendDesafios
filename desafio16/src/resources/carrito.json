@@ -1,0 +1,28 @@
+[
+  {
+    "id": 4,
+    "timestamp": "19/12/2022-19:14:41",
+    "products": [
+      {
+        "id": 13,
+        "timestamp": "",
+        "title": "Cinnamon Roll",
+        "description": "Consiste en una lámina enrollada de masa leudada con levadura sobre la que se espolvorea una mezcla de canela y azúcar sobre una fina capa de mantequilla.",
+        "code": "VC-CR-F",
+        "thumbnail": "https://www.starbucks.com.au/imagecache/bestfit/620x634/_files/product-images/bakery/cinnamonscroll-shadow.png",
+        "price": 260,
+        "stock": 87000
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "timestamp": "19/12/2022-19:16:15",
+    "products": []
+  },
+  {
+    "id": 6,
+    "timestamp": "19/12/2022-19:16:25",
+    "products": []
+  }
+]
