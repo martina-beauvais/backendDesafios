@@ -1,0 +1,13 @@
+<div>
+    <h1>Bienvenido, {{user.name}}</h1>
+    <img src={{user.avatar}}/>
+    <h3>Datos del usuario:</h3>
+    <p>Nombre: {{user.firstName}}</p>
+    <p>Apellido: {{user.lastName}} </p>
+    <p>Edad: {{user.edad}}</p> 
+    <p>Dirección: {{user.direccion}} </p>
+    <p>Número de teléfono: {{user.numero}} </p>
+</div>
+<form method="post" action="/logout">
+    <button type="submit"> Log Out </button>
+</form>
