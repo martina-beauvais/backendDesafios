@@ -1,0 +1,61 @@
+<div>
+    <img src="sign-up.png" class="signupImage" alt="" srcset="">
+</div>
+
+<form id="registerForm">
+    <div class="inputbox">
+        <input required="required" type="text" name="firstName">
+        <span>Name</span>
+        <i></i>
+    </div>
+    <div class="inputbox">
+        <input required="required" type="text" name="lastName">
+        <span>Last name</span>
+        <i></i>
+    </div>
+    <div class="inputbox">
+        <input required="required" type="text" name="email">
+        <span>Email</span>
+        <i></i>
+    </div>
+    <div class="inputbox">
+        <input type="number" name="direccion">
+        <span>Dirección</span>
+        <i></i>
+    </div>
+    <div class="inputbox">
+        <input type="number" name="edad">
+        <span>Edad</span>
+        <i></i>
+    </div>
+    <div class="inputbox">
+        <input type="number" placeholder="Ej: +5492216742345" pattern="[+][0-9]{8,20}" name="numero">
+        <span>Nº de teléfono</span>
+        <i></i>
+    </div>
+    <div class="inputbox">
+        <input required="required" type="text" name="username">
+        <span>Username</span>
+        <i></i>
+    </div>
+    <div class="inputbox">
+        <input required="required" type="password" name="password">
+        <span>Password</span>
+        <i></i>
+    </div>
+    <div class="inputbox">
+        <input required="required" type="file" name="avatar">
+        <span>Avatar</span>
+        <i></i>
+    </div>
+    <button type="submit"> 
+        <a href="/home">
+        Sign Up
+        </a>
+    </button>
+</form>
+
+<p>¿Ya tienes una cuenta? <a href="/login">Iniciar sesión</a></p>
+
+<script type="text/javascript" src="./js/register.js"></script>
+<link type="text/css" rel="stylesheet" href="./css/sign-up.css">
