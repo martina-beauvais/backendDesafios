@@ -1,0 +1,17 @@
+<div>
+    {{#if products}}
+    <h1>Hi {{name}}, this is your cart</h1>
+    {{#each products}}
+    <div>
+        <p>{{this.title}}</p>
+        <p>{{this.price}}</p>
+    </div>
+    {{/each}}
+    <button id="purchaseButton"> Add to library </button>
+    <a href="/">Continue shopping</a>
+    {{else}}
+    <h1>No products in your cart yet.</h1>
+    <a href="/">Start shopping</a>
+    {{/if}}
+</div>
+<script src="./js/cart.js"></script>
